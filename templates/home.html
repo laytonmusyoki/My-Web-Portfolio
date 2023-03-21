@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="{{ url_for('static',filename='css/style.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static',filename='js/script.js') }}">
+    <script src="https://unpkg.com/typed.js@2.0.132/dist/typed.umd.js"></script>
+    <script src="https://kit.fontawesome.com/8a42449199.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
+    <style>
+        .body{
+    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url("{{url_for('static',filename='images/img.jpg')}}");
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+}
+    </style>
+</head>
+<body>
+    <section class="home" id="home">
+        <div class="body">
+        <header>
+            <div class="logo">
+                <h1>Port<span>folio</span></h1>
+            </div>
+            <div class="navbar">
+                <ul>
+                    <li ><a href="#home" class="active">HOME</a></li>
+                    <li><a href="#about">ABOUT</a></li>
+                    <li><a href="#skills">SKILLS</a></li>
+                    <li><a href="#services">SERVICES</a></li>
+                    <li><a href="#contact">CONTACT</a></li>
+
+                </ul>
+            </div>
+            <div class="menu">
+                <span id="menu-icon">&#9776</span>
+            </div>
+        </header>
+        <div class="content">
+            <div class="col-2">
+               <div class="desc">
+                <h4>Hello It's me</h4>
+                <h1>Layton Musyoki</h1>
+                <h4> I'm a <span class="multiple"></span></h4>
+               </div>
+               <div class="img5">
+                <a href="https://facebook.com/Mathexh Kalistar Musyoki"> <img src="{{ url_for('static',filename='images/fb.png') }}"> </a>
+                <a href="https://twitter.com/Layton matheka"> <img src="{{ url_for('static',filename='images/twitter.png') }}"> </a>
+                <a href="https://telegram.com/Layton matheka"> <img src="{{ url_for('static',filename='images/telegram.png') }}"> </a>
+                <a href="https://whatsapp.com/layton"> <img src="{{ url_for('static',filename='images/whats.png') }}"> </a>
+                <a href="https://github.com/laytonmusyoki"> <img src="{{ url_for('static',filename='images/github.png') }}"> </a>
+            </div>
+            </div>
+            <div class="col-2">
+                <div class="img">
+                    <img src="{{ url_for('static',filename='images/img2.jpg') }}" >
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--------- about-------->
+    <section class="background" id="about">
+        <div class="main2">
+            <h1 style="padding-top: 30px;">ABOUT</h1>
+     <div class="about">
+            <div class="col-3">
+                <div class="img2">
+                <img src="{{ url_for('static',filename='images/img.jpg') }}" >
+            </div>
+            </div>
+            <div class="col-3">
+                <div class="text">
+                <h2 style="color:orange;text-align: center; ">About</h2>
+                <p style="color:#fff ;line-height: 25px; text-align: center; padding: 0 30px;">I'm a skilled web developer width expertise in creating dynamic and engaging websites.With a passion for programming and dedication to staying up-to-date with the latest industry trends. I have developed a strong track record of delivering  high-quality web solutions to clients across a variety of industries.</p>
+            </div>
+            </div>
+        </div>
+    </div>
+</div>
+    </section>
+    <!-----------------skills ---------------->
+    <section class="skills" id="skills">
+        <div class="main3">
+            <h1 style="padding-top: 30px;">SKILLS</h1>
+        
+        <div class="row">
+            <div class="col-4">
+                <div class="box">
+                    <div class="img4">
+                        <img src="{{ url_for('static',filename='images/html.jpg') }}" alt="">
+                        <h3 style="text-align: center;color: orange;">HTML</h3>  
+                    </div>
+                      <p style="color: #fcfc;">I'm able to use html language to <br> come up with web pages</p>
+            </div>
+            </div>
+            <div class="col-4">
+                <div class="box">
+                    <div class="img4">
+                        <img src="{{ url_for('static',filename='images/css.jpg') }}" alt="">
+                        <h3 style="text-align: center;color: orange;">CSS</h3>  
+                    </div>
+                      <p style="color: #fcfc;">Able to use css to create designs that <br> adapt to different screen sizes <br> and devices </p>
+            </div>
+            </div>
+            <div class="col-4">
+                <div class="box">
+                    <div class="img4">
+                        <img src="{{ url_for('static',filename='images/js.png') }}" alt="">
+                        <h3 style="text-align: center;color: orange;">JAVASCRIPT</h3>  
+                    </div>
+                      <p style="color: #fcfc;">Able to use javascript to create designs <br> that adapt to different screen sizes <br> and devices </p>
+            </div>
+            </div>
+            <div class="col-4">
+                <div class="box">
+                    <div class="img4">
+                        <img src="{{ url_for('static',filename='images/php.jpg') }}" alt="">
+                        <h3 style="text-align: center;color: orange;">PHP</h3>  
+                    </div>
+                      <p style="color: #fcfc;">I'm able to use php language to <br> to create a goog backend for my clients</p>
+            </div>
+            </div>
+            <div class="col-4">
+                <div class="box">
+                    <div class="img4">
+                        <img src="{{ url_for('static',filename='images/py.jpg') }}" alt="">
+                        <h3 style="text-align: center;color: orange;">PYTHON</h3>  
+                    </div>
+                      <p style="color: #fcfc;">Able to use python framework(flask) to <br> build a good backend</p>
+            </div>
+            </div>
+            <div class="col-4">
+                <div class="box">
+                    <div class="img4">
+                        <img src="{{ url_for('static',filename='images/mysql.jpg') }}" alt="">
+                        <h3 style="text-align: center;color: orange;">MySQL</h3>  
+                    </div>
+                      <p style="color: #fcfc;">Able to use MySQL to perform different task such as user authentication <br> by storing their information</p>
+            </div>
+            </div>
+        </div>
+    </div>
+    </section>
+    <!-------------------services--------------->  
+    <section class="services" id="services">
+        <div class="main4">
+            <h1 style="padding-top: 40px;">SERVICES</h1>
+            <div class="box1">
+
+                <div class="card">
+                    <i class="fas fa-bars"></i>
+                    <h5>Web development</h5>
+                    <div class="pra">
+                        <p>Every website should be bult with two primary goals: Firstly, it needs to work across all devices.Secondly, it needs to be as fast as possible</p>
+                        <p style="text-align: center;">
+                            <a class="button" href="#">Read More</a>
+                        </p>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <i class="far fa-user"></i>
+                    <h5>Web development</h5>
+                    <div class="pra">
+                        <p>Every website should be bult with two primary goals: Firstly, it needs to work across all devices.Secondly, it needs to be as fast as possible</p>
+                        <p style="text-align: center;">
+                            <a class="button" href="#">Read More</a>
+                        </p>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <i class="far fa-bell"></i>
+                    <h5>Web development</h5>
+                    <div class="pra">
+                        <p>Every website should be bult with two primary goals: Firstly, it needs to work across all devices.Secondly, it needs to be as fast as possible</p>
+                        <p style="text-align: center;">
+                            <a class="button" href="#">Read More</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!----------contact----------->
+    <section class="contact" id="contact">
+        <div class="main5">
+            <h1 style="padding-top: 40px;">CONTACT</h1>
+            <div class="contact-me">
+                <div class="col2">
+                    <div class="title">
+                        <h3>Let's Talk Now !!</h3>
+                        <p style="color: orange;"> You can reach me by sending your message here!!!</p><br><br>
+                        <a class="button" href="#">Hire Me</a>
+                    </div>
+                </div>
+                <div class="col2">
+                    <div class="box4">
+                        <h1 style="text-align: center;color: #f9004d;">CONTACT-ME</h1>
+                        <div class="input">
+                            <form action="https://formspree.io/f/mbjbezwd" method="POST">
+                                <input type="email" name="name" placeholder="Enter your email" required><br><br>
+                                <textarea name="message" id="" cols="50" rows="9" placeholder="Enter your message here !!" required></textarea><br><br>
+                            <button type="submit" class="btn">Send message</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+           
+        </div>
+    </section>
+    <footer >
+        <p>&copy; 2023| All rights reserved ||Layton Softwares!!</p>
+        <hr>
+    </footer>
+     <!-- menuscript -->
+<script>
+let menu=document.querySelector('#menu-icon');
+let navbar=document.querySelector('.navbar');
+
+menu.onclick =() => {
+    menu.classList.toggle('#menu-icon');
+    navbar.classList.toggle('open')
+}
+</script>
+
+<script>
+    var typed = new Typed('.multiple', {
+      strings: ['full stack web developer','UIX designer', 'Database Administrator','Data Administrator'],
+      typeSpeed: 50,
+      backspeed:50,
+      backdelay:1000,
+      loop:true
+    });
+  </script>
+<script>
+var scroll = new SmoothScroll('a[href*="#"]', {
+	speed: 1000,
+	speedAsDuration: true
+});
+</script>
+
+
+</body>
+</html>
